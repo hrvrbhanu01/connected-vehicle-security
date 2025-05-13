@@ -1,0 +1,4 @@
+<routes>
+    <vType id="car" vClass="passenger" speedDev="0.2" sigma="0.5"/>
+    <route id="route0" edges="edge0 edge1"/>
+</routes>

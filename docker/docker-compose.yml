@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  suricata:
+    image: jasonish/suricata:latest
+    volumes:
+      - ./suricata/custom.rules:/etc/suricata/rules/custom.rules
+      - ./suricata/logs:/var/log/suricata
+    network_mode: "host"
+    command: -i eth0 -c /etc/suricata/suricata.yaml -l /var/log/suricata/
+
+  ecu-simulator:
+    build:
+      context: .
+      dockerfile: Dockerfile.ecu
+    network_mode: "host"
+
+  fabric-network:
+    image: hyperledger/fabric-test-network:latest
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./blockchain:/chaincode

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<net version="1.0" junctionCornerDetail="5" limitTurnSpeed="5.50">
+    <location netOffset="0.00,0.00" convBoundary="0.00,0.00,1000.00,1000.00"/>
+    <edge id="edge0" from="junction0" to="junction1">
+        <lane id="edge0_0" index="0" speed="13.89" length="1000.00"/>
+    </edge>
+    <edge id="edge1" from="junction1" to="junction0">
+        <lane id="edge1_0" index="0" speed="13.89" length="1000.00"/>
+    </edge>
+    <junction id="junction0" x="0.00" y="500.00" type="priority"/>
+    <junction id="junction1" x="1000.00" y="500.00" type="priority"/>
+</net>

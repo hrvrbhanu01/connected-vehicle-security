@@ -1,0 +1,5 @@
+FROM python:3.9
+WORKDIR /app
+COPY scripts/simulate_ecu.py .
+RUN pip install requests
+CMD ["python", "simulate_ecu.py"]

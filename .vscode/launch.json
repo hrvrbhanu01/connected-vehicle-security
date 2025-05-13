@@ -1,0 +1,17 @@
+{
+  "configurations": [
+    {
+      "name": "Python: SUMO Injector",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/scripts/inject_sumo.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Python: Alert Processor",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/scripts/process_alerts.py"
+    }
+  ]
+}
