@@ -1,0 +1,2 @@
+sim_time,vehicle_id,x,y,speed,acceleration,is_malicious
+0.6,car0,5.463245568883081,-1.6,1.1763503731297629,2.1259164062463287,0

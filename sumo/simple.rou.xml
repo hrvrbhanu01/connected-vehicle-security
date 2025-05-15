@@ -1,4 +1,5 @@
 <routes>
     <vType id="car" vClass="passenger" speedDev="0.2" sigma="0.5"/>
     <route id="route0" edges="edge0 edge1"/>
+    <vehicle id="car0" type="car" route="route0" depart="0" departLane="best"/>
 </routes>

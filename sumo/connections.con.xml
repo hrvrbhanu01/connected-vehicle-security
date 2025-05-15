@@ -1,0 +1,4 @@
+<connections>
+    <connection from="edge0" to="edge1" fromLane="0" toLane="0"/>
+    <connection from="edge1" to="edge0" fromLane="0" toLane="0"/>
+</connections>

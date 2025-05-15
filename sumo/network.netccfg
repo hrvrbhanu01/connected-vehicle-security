@@ -1,0 +1,10 @@
+<configuration>
+    <input>
+        <node-files value="nodes.nod.xml"/>
+        <edge-files value="edges.edg.xml"/>
+        <connection-files value="connections.con.xml"/>
+    </input>
+    <output>
+        <output-file value="simple.net.xml"/>
+    </output>
+</configuration>
