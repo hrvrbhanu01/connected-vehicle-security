@@ -1,3 +1,4 @@
 data/
 fabric-samples/
 blockchain/bin/peer
+node_modules/

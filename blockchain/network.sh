@@ -6,8 +6,13 @@ FABRIC_NETWORK_SCRIPT="./fabric-samples/test-network/network.sh"
 # Custom variables for your project
 CHANNEL_NAME="mychannel"
 CHAINCODE_NAME="recordEvent"
-CHAINCODE_PATH="../chaincode"  # Relative to fabric-samples/test-network
+CHAINCODE_PATH="${PWD}/chaincode"  # Relative to fabric-samples/test-network
 CHAINCODE_LANG="javascript"
+
+if [ ! -f "${CHAINCODE_PATH}/recordEvent.js" ]; then
+  echo "❌ Chaincode file not found at ${CHAINCODE_PATH}/recordEvent.js"
+  exit 1
+fi
 
 # Wrapper functions
 function deploy() {
